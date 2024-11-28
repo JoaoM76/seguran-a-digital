@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Digital: Boas Práticas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007bff; /* Azul confiável */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            border-bottom: 4px solid #0056b3; /* Azul mais escuro */
+        }
+        nav {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #0056b3; /* Azul mais escuro */
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #004494; /* Azul ainda mais escuro */
+        }
+        section {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        h2 {
+            color: #007bff; /* Azul confiável */
+            border-bottom: 2px solid #007bff; /* Azul confiável */
+            padding-bottom: 5px;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+        ul {
+            line-height: 1.6;
+            padding-left: 20px;
+        }
+        .gerador-senhas {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .gerador-senhas button {
+            padding: 10px 20px;
+            background-color: #007bff; /* Azul confiável */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .gerador-senhas button:hover {
+            background-color: #0056b3; /* Azul mais escuro */
+        }
+        #password {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #007bff; /* Azul confiável */
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Segurança Digital: Boas Práticas</h1>
+</header>
+
+<nav>
+    <a href="#senhas">Senhas Seguras</a>
+    <a href="#phishing">Reconhecendo Phishing</a>
+    <a href="#dados">Protegendo Dados Pessoais</a>
+    <a href="#wifi">Segurança em Redes Wi-Fi</a>
+    <a href="#sites-seguros">Reconhecimento de Sites Seguros</a>
+    <a href="#privacidade">Privacidade nas Redes Sociais</a>
+    <a href="#vazamento">Consequências de Vazamentos de Dados</a>
+    <a href="#crianças">Segurança para Crianças</a>
+</nav>
+
+<section id="senhas">
+    <h2>1. Criando Senhas Seguras</h2>
+    <p>Uma senha segura é fundamental para proteger suas contas online. Siga estas dicas:</p>
+    <ul>
+        <li>Use pelo menos 12 caracteres.</li>
+        <li>Combine letras maiúsculas, minúsculas, números e símbolos.</li>
+        <li>Evite palavras comuns e informações pessoais, como datas de nascimento.</li>
+        <li>Use um gerenciador de senhas para armazenar e gerar senhas fortes.</li>
+    </ul>
+
+    <div class="gerador-senhas">
+        <h3>Gerador de Senhas</h3>
+        <button onclick="generatePassword()">Gerar Senha</button>
+        <p id="password"></p>
+    </div>
+</section>
+
+<section id="phishing">
+    <h2>2. Reconhecendo Phishing</h2>
+    <p>O phishing é uma técnica usada por cibercriminosos para enganar usuários. Aprenda a reconhecer:</p>
+    <ul>
+        <li>Desconfie de e-mails ou mensagens que pedem informações pessoais.</li>
+        <li>Verifique o endereço de e-mail do remetente.</li>
+        <li>Cuidado com links suspeitos. Passe o mouse sobre eles para ver o destino real.</li>
+        <li>Nunca forneça informações sensíveis em sites não verificados.</li>
+    </ul>
+</section>
+
+<section id="dados">
+    <h2>3. Protegendo Dados Pessoais</h2>
+    <p>Protegê-los é essencial para sua segurança online. Siga estas práticas:</p>
+    <ul>
+        <li>Não compartilhe informações pessoais em redes sociais.</li>
+        <li>Revise as configurações de privacidade de suas contas online.</li>
+        <li>Use autenticação de dois fatores sempre que possível.</li>
+        <li>Desconecte-se de contas em dispositivos públicos.</li>
+    </ul>
+</section>
+
+<section id="wifi">
+    <h2>4. Segurança em Redes Wi-Fi</h2>
+    <p>Proteger sua rede Wi-Fi é crucial. Considere estas dicas:</p>
+    <ul>
+        <li>Use uma senha forte para sua rede.</li>
+        <li>Desative a transmissão do nome da rede (SSID).</li>
+        <li>Ative a criptografia (WPA3, se disponível).</li>
+        <li>Atualize o firmware do seu roteador regularmente.</li>
+    </ul>
+</section>
+
+<section id="sites-seguros">
+    <h2>5. Reconhecimento de Sites Seguros</h2>
+    <p>Aprenda a identificar se um site é seguro:</p>
+    <ul>
+        <li>Verifique se o URL começa com "https://".</li>
+        <li>Procure por um ícone de cadeado na barra de endereços.</li>
+        <li>Leia avaliações sobre o site e sua reputação.</li>
+        <li>Desconfie de ofertas que parecem boas demais para ser verdade.</li>
+    </ul>
+</section>
+
+<section id="privacidade">
+    <h2>6. Privacidade nas Redes Sociais</h2>
+    <p>Mantenha sua privacidade nas redes sociais com estas dicas:</p>
+    <ul>
+        <li>Revise suas configurações de privacidade regularmente.</li>
+        <li>Não compartilhe informações sensíveis publicamente.</li>
+        <li>Seja cauteloso ao aceitar solicitações de amizade de desconhecidos.</li>
+        <li>Desative a localização em postagens.</li>
+    </ul>
+</section>
+
+<section id="vazamento">
+    <h2>7. Consequências de Vazamentos de Dados</h2>
+    <p>Se seus dados forem expostos, siga estas etapas:</p>
+    <ul>
+        <li>Altere suas senhas imediatamente.</li>
+        <li>Ative a autenticação de dois fatores, se disponível.</li>
+        <li>Monitore suas contas para atividades suspeitas.</li>
+        <li>Considere congelar seu crédito em caso de roubo de identidade.</li>
+    </ul>
+</section>
+
+<section id="crianças">
+    <h2>8. Segurança para Crianças</h2>
+    <p>Ensine suas crianças sobre segurança online:</p>
+    <ul>
+        <li>Converse sobre os perigos de compartilhar informações pessoais.</li>
+        <li>Ensine-as a identificar mensagens suspeitas.</li>
+        <li>Use ferramentas de controle parental para monitorar atividades online.</li>
+        <li>Estabeleça regras sobre o uso da internet.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2024 Segurança Digital. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    function generatePassword() {
+        const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+?><:{}[]";
+        let password = "";
+        for (let i = 0; i < 12; i++) {
+            password += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        document.getElementById("password").innerText = password;
+    }
+</script>
+
+</body>
+</html>
